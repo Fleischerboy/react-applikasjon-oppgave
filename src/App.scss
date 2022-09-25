@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+.card {
+  border: 1px solid black;
+  max-width: 500px;
+  padding: 10px;
+
+
+  .card-button-wrapper {
+    display: flex;
+    justify-content: end;
+
+  }
+
+  button {
+   background-color: #ff0055;
+   border: none;
+   border-radius: 10px;
+   color: white;
+   height: 30px;
+   text-decoration: none;
+   cursor: pointer;
+   padding: 0.5rem 1.5rem;
+
+
+
+  }
+
+}
+
+
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 0;
+  grid-template-rows: 1fr;
+  max-width: 900px;
+  margin: 5rem auto 0;
+  list-style: none;
+
+}
+
+.card-list-item {
+
+  margin: 10px;
+}
