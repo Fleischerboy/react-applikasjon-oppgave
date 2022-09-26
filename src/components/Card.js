@@ -1,13 +1,19 @@
 import Button from "./Button";
 
-const Card = ({ title, description }) => {
+const Card = ({ title, description, handleClick }) => {
   return (
     <>
       <div className="card">
-        <h1>{title}</h1>
-        <p>{description}</p>
+        <h2>
+          <b>{title}</b>
+        </h2>
+        <p>
+          {description.length > 80
+            ? `${description.substring(0, 80)}...`
+            : description}
+        </p>
         <div className="card-button-wrapper">
-          <Button text="Complete" />
+          <Button onClick={handleClick} text="Complete" />
         </div>
       </div>
     </>
